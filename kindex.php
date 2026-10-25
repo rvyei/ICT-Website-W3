@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karlynn Lorah A. Ballenas | Student Portfolio</title>
+  <link rel="stylesheet" href="kstyle.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo">Kakarl's Home</div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home" class="nav-item">Home</a></li>
+        <li><a href="#about" class="nav-item">About</a></li>
+        <li><a href="#skills" class="nav-item">Skills</a></li>
+        <li><a href="#contact" class="nav-item">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="full-page-section hero">
+      <div class="container hero-content">
+        <img src="pfp.jpg" alt="Karlynn Lorah Profile Picture">
+        <h1 class="hero-title">Hi, I am Karlynn Lorah!</h1>
+        <p class="hero-tagline">A first-year Information Technology student at Notre Dame of Dadiangas University.</p>
+      </div>
+    </section>
+
+    <section id="about" class="full-page-section">
+      <div class="container">
+        <h1 class="section-title">About Me</h1>
+        <div class="about-card">
+          <span class="about-badge">Student Profile</span>
+          <p>
+            Hello! I am <strong>Karlynn Lorah A. Ballenas</strong>, a driven 1st-year Information Technology student studying at <strong>Notre Dame of Dadiangas University</strong>.
+          </p>
+          <p>
+            I am passionate about software development, web design, and creative technology. My goal is to master modern web practices and build responsive, accessible, and user-friendly digital experiences.
+          </p>
+          <p>
+            
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="full-page-section">
+      <div class="container">
+        <h1 class="section-title">My Skills & Progress</h1>
+        <div class="grid-container">
+          <div class="card" onclick="openPage('kcpp.html')">
+            <div>
+              <h3>C++ Language</h3>
+              <p>Mastering OOP principles, pointers, and data structures.</p>
+            </div>
+          </div>
+
+          <div class="card" onclick="openPage('khtml.html')">
+            <div>
+              <h3>HTML Language</h3>
+              <p>Building semantic web structures and accessible layouts.</p>
+            </div>
+          </div>
+
+          <div class="card" onclick="openPage('kcss.html')">
+            <div>
+              <h3>CSS Language</h3>
+              <p>Designing responsive layouts with Flexbox and Grid.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="full-page-section">
+      <div class="container">
+        <h1 class="section-title">Contact Me</h1>
+        <p>Feel free to reach out to me via email or social links below:</p>
+
+        <ul class="contact-info">
+          <li><strong>Email:</strong> karlynnballenas@gmail.com</li>
+          <li><strong>School Email:</strong> ballenaskarlynnlorah@nddu.edu.ph</li>
+          <li><strong>Contact Number:</strong> (+63) 953 492 5858</li>
+          <li><strong>GitHub:</strong> github.com/rvyei</li>
+          <li><strong>Facebook:</strong> Karl Ballenas</li>
+        </ul>
+
+        <form action="send_message.php" method="POST" class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" autocomplete="name" required>
+
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" autocomplete="email" required>
+
+          <label for="message">Message</label>
+          <textarea name="message" id="message" autocomplete="off" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Karlynn Lorah A. Ballenas. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="kjavascript.js"></script>
+</body>
+</html>
